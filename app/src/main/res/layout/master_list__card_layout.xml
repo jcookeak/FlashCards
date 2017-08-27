@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Created by: Jonathon Cooke-Akaiwa
+Created On: 2/22/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 2/26/2017
+Layout for individual card
+-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/category_card"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:padding="16dp"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+
+            <!--name of card category-->
+            <TextView
+                android:id="@+id/category_name"
+                android:text="name"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp"
+                android:paddingLeft="16dp"
+                android:textSize="24dp"/>
+
+    <!--align with bottom-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <!--number of fields in category-->
+        <TextView
+            android:id="@+id/category_size"
+            android:text="test"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:paddingBottom="16dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"/>
+
+        <!--overflow menu button-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_menu"
+            android:text="@string/vertical_ellipsis"
+            android:textColor="@color/half_black"
+            android:padding="16dp"
+            android:textSize="24dp"
+            android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.jcookeakindiana.flashcards">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FlashCardsMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ModifyCategoryActivity"
+            android:label="@string/title_activity_create_category"
+            android:parentActivityName=".FlashCardsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.jcookeakindiana.flashcards.FlashCardsMainActivity" />
+        </activity>
+        <activity
+            android:name=".FlashcardListActivity"
+            android:label="@string/title_activity_card_list"
+            android:parentActivityName=".FlashCardsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.jcookeakindiana.flashcards.FlashCardsMainActivity" />
+        </activity>
+        <activity
+            android:name=".ModifyFlashcardActivity"
+            android:label="@string/title_activity_modify_flashcard"
+            android:parentActivityName=".FlashCardsMainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.jcookeakindiana.flashcards.FlashcardListActivity" />
+        </activity>
+        <activity
+            android:name=".ReviewActivity"
+            android:label="@string/title_activity_review"
+            android:parentActivityName=".FlashcardListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.jcookeakindiana.flashcards.FlashcardListActivity" />
+        </activity>
+    </application>
+
+</manifest>

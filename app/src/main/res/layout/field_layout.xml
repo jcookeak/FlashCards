@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+field_layout.xml
+Created by: Jonathon Cooke-Akaiwa
+Created On: 2/25/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 3/3/2017
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/field_layout">
+
+    <!--label for field name-->
+    <TextView
+        android:text="@string/category_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_field_label"/>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--category field input-->
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/category_name_input"
+            android:layout_marginRight="60dp"
+            android:ems="10"
+            android:id="@+id/category_field_title"
+            android:inputType="textCapWords"
+            android:layout_alignParentLeft="true"/>
+
+
+        <!--delete entry-->
+        <ImageButton
+            android:id="@+id/category_field_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_forever"
+            android:layout_alignParentEnd="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

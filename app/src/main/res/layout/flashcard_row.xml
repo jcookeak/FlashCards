@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+flashcard_rowreated by: Jonathon Cooke-Akaiwa
+Created On: 3/1/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 3/1/2017
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/flashcard_row"
+    android:weightSum="1">
+
+    <!--label for field name-->
+    <TextView
+        android:text="@string/category_name_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flashcard_row_label"/>
+
+    <!--only one of the two following will be visible at a time-->
+    <!--text field for row-->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/category_name_input"
+        android:ems="10"
+        android:id="@+id/flashcard_row_text"
+        android:visibility="invisible"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textSize="30sp"
+        android:textColor="@color/black_semi_transparent" />
+
+
+    <!--Image for row-->
+    <ImageView
+        android:id="@+id/flashcard_row_imageview"
+        android:src="@drawable/ic_delete_forever"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:maxHeight="100dp"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true"
+        android:background="@color/half_black"/>
+
+
+</LinearLayout>

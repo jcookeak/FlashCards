@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+activity_create_category.xml
+Created by: Jonathon Cooke-Akaiwa
+Created On: 2/25/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 2/25/2017
+-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="edu.jcookeakindiana.flashcards.ModifyCategoryActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/create_category_toolbar_layout">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="fill_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <!--save button-->
+            <Button
+                android:text="@string/categories_save"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_alignParentRight="true"
+                android:id="@+id/categories_save_button"
+                style="@style/Widget.AppCompat.Button.Borderless" />
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_create_category"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+
+   <com.getbase.floatingactionbutton.FloatingActionsMenu
+       android:id="@+id/fab_menu"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="bottom|end"
+       android:layout_margin="@dimen/fab_margin"
+       fab:fab_addButtonColorNormal="@color/colorPrimaryDark"
+       fab:fab_addButtonColorPressed="@color/colorPrimary"
+       fab:fab_labelStyle="@style/menu_labels_style"
+       fab:fab_addButtonPlusIconColor="@color/white"
+       fab:fab_addButtonStrokeVisible="false"
+       fab:fab_expandDirection="up">
+
+       <!--fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"-->
+       <!--fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"-->
+
+       <com.getbase.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab_text"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           fab:fab_title="add text"
+           fab:fab_colorNormal="@color/pink"
+           fab:fab_colorPressed="@color/pink_pressed">
+       </com.getbase.floatingactionbutton.FloatingActionButton>
+       <com.getbase.floatingactionbutton.FloatingActionButton
+           android:id="@+id/fab_image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           fab:fab_title="@string/fab_image"
+           fab:fab_colorNormal="@color/pink"
+           fab:fab_colorPressed="@color/pink_pressed">
+       </com.getbase.floatingactionbutton.FloatingActionButton>
+
+   </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</android.support.design.widget.CoordinatorLayout>

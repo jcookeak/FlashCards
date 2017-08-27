@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+content_master_card_list.xmlist.xml
+Created by: Jonathon Cooke-Akaiwa
+Created On: 2/22/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 2/24/2017
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+</LinearLayout>

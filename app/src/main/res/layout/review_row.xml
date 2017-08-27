@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+flashcard_list_item.xml
+Created by: Jonathon Cooke-Akaiwa
+Created On: 3/3/2017
+Last Modified by: Jonathon Cooke-Akaiwa
+Last Modified on: 3/3/2017
+individual row for review answer list
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--text answer-->
+    <TextView
+        android:id="@+id/review_row_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textColor="@android:color/black" />
+    <!--image answer-->
+    <ImageView
+        android:id="@+id/review_row_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxHeight="100dp"
+        android:cropToPadding="true"
+        android:adjustViewBounds="true" />
+</LinearLayout>
